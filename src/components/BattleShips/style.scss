@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.ships_container {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
+
+  .battle_ships {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    img:first-child {
+      width: 50%;
+    }
+
+    img {
+      width: 5%;
+    }
+  }
+
+  @media (max-width: $desktop) {
+    margin-top: 0;
+    width: 66%;
+    flex: none;
+
+    .battle_ships {
+        width: 48%;
+        gap: 10px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

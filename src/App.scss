@@ -1,0 +1,52 @@
+@import './variables';
+
+.App {
+  text-align: center;
+
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 20px;
+
+
+    .show_status {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+    }
+
+    @media (max-width: $desktop) {
+      display: block;
+      padding: 20px;
+
+      .show_status {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      display: block;
+      padding: 0;
+
+      .show_status {
+        display: block;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

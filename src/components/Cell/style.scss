@@ -1,0 +1,12 @@
+.cell {
+    box-sizing: border-box;
+    border: 1px solid rgb(110, 109, 109);
+    aspect-ratio: 1;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.cell:hover {
+    background-color: rgb(227, 226, 226);
+}
